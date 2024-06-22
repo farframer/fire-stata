@@ -104,7 +104,7 @@ app.frame('/authorize', async c => {
         await (await fetch(`https://api.fifire.xyz/v1/user/top?offset=0&count=5`)).text(),
       )
     } catch (e) {
-      /* ignore */
+      console.error(e) // eslint-disable-line no-console
     }
   } else {
     if (isCheckStatus) {
