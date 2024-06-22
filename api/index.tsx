@@ -101,7 +101,7 @@ app.frame('/authorize', async c => {
         dappyKit,
         appAddress,
         userMainAddress,
-        await (await fetch(`https://api.fifire.xyz/v1/user/top?offset=0&count=100`)).text(),
+        await (await fetch(`https://api.fifire.xyz/v1/user/top?offset=0&count=10`)).text(),
       )
     } catch (e) {
       /* ignore */
