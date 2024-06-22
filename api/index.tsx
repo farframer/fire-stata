@@ -97,7 +97,12 @@ app.frame('/authorize', async c => {
     text = '✅ Done!'
     intents = [<Button action={'/'}>OK</Button>]
     try {
-      await dappySaveData(dappyKit, appAddress, userMainAddress, 'Daily bonus received!')
+      await dappySaveData(
+        dappyKit,
+        appAddress,
+        userMainAddress,
+        await (await fetch(`https://api.fifire.xyz/v1/user/top?offset=0&count=100`)).text(),
+      )
     } catch (e) {
       /* ignore */
     }
