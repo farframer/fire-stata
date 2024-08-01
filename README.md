@@ -1,5 +1,5 @@
 # Crypto Projects Statistics
 
-Deployed project: 
+Deployed project: https://warpcast.com/tipz/0x943fa3db
 
-Video: 
+[Video](./stata-show.mov)
